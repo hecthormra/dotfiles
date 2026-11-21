@@ -1,0 +1,11 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "❯";
+    display-run: "❯";
+    display-window: "❯";
+    drun-display-format: "{name}";
+}
+
+@theme "arc-dark"
