@@ -1,0 +1,5 @@
+*.backup
+*.backup-*
+*.save
+*.bak
+*.bak2
