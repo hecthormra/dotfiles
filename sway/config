@@ -74,7 +74,7 @@ output * bg /home/hecthor/Pictures/Wallpapers/wallhaven-po5kye_1920x1080.png fil
     bindsym $mod+d exec $menu
     
     # reload waybar 
-    bindsym $mod+Shift+r exec pkill waybar && waybar &  
+    bindsym $mod+Shift+r exec pkill dbar && dbar &  
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -101,7 +101,8 @@ output * bg /home/hecthor/Pictures/Wallpapers/wallhaven-po5kye_1920x1080.png fil
     bindsym $mod+Shift+z exec swaylock
 
     bindsym $mod+z exec flatpak run app.zen_browser.zen
-    
+
+    bindsym $mod+Shift+a exec thunar
 
 #
 # Moving around:
@@ -293,10 +294,19 @@ exec_always {
 }
 
 # Swayfx 
-# corner_radius 12
+corner_radius 0
+shadows enable
+shadows_on_csd enable
+shadow_blur_radius 0
+
+blur enable
+blur_xray enable
+blur_passes 3
+blur_radius 3
+blur_noise 0
 
 # window minecraft 
-# for_window [class="Minecraft.*"] floating enable, resize set 1280 720
+for_window [class="Minecraft.*"] floating enable, resize set 800 600
 
 # window waydroid 
 # assign [app_id="Waydroid"] workspace number 1
